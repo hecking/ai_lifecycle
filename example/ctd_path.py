@@ -1,0 +1,1 @@
+cracktip_dir='path_to_cracktip_detection_directory'

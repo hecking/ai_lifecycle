@@ -1,6 +1,6 @@
+import ctd_path
 import sys
-PATH_TO_CRACKTIP_PROJECT = 'C:/Users/heck_ti/Documents/explainable-crack-tip-detection'
-sys.path.append(PATH_TO_CRACKTIP_PROJECT)
+sys.path.append(ctd_path.cracktip_dir)
 
 import torch
 from src.deep_learning import nets

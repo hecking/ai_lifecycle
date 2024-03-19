@@ -1,5 +1,6 @@
+import ctd_path
 import sys
-PATH_TO_CRACKTIP_PROJECT = 'C:/Users/heck_ti/Documents/explainable-crack-tip-detection'
+PATH_TO_CRACKTIP_PROJECT = ctd_path.cracktip_dir
 sys.path.append(PATH_TO_CRACKTIP_PROJECT)
 
 import os

@@ -1,1 +1,0 @@
-# How to run install the example project
