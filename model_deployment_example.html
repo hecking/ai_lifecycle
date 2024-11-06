@@ -172,13 +172,14 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Methoden und Werkzeuge zum Management des gesamten Lifecycles von industriellen KI-Anwendungen
+                    Methoden und Werkzeuge zum Management des Lifecycles von KI-Anwendungen und deren Qualitätssicherung
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="ai_lifecycle.html">Der Lifecylce von Machine Learning basierten KI Anwendungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ml_ops.html">MLOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_application.html">Beispielanwendung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_engineering.html">Data Engineering</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="modelling.html">Modelling</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="experiment_tracking.html">Tracking von ML Experimenten</a></li>
@@ -191,6 +192,7 @@
 <li class="toctree-l2"><a class="reference internal" href="model_monitoring.html">Model Monitoring</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="recap.html">Zusammenfassung</a></li>
 </ul>
 
     </div>
@@ -424,8 +426,6 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">PATH_TO_CRACKTIP_PROJECT</span> <span class="o">=</span> <span class="s1">&#39;C:/Users/heck_ti/Documents/explainable-crack-tip-detection&#39;</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">PATH_TO_CRACKTIP_PROJECT</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">example.data_loader</span> <span class="k">as</span> <span class="nn">dl</span>
 <span class="kn">import</span> <span class="nn">example.crack_tip_plotting</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
@@ -442,6 +442,42 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\heck_ti\.conda\envs\misc\Lib\site-packages\tqdm\auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading artifacts:   0%|                                                                     | 0/6 [00:00&lt;?, ?it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading artifacts:  17%|███████████▌                                                         | 1/6 [00:00&lt;?, ?it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading artifacts:  33%|███████████████████████                                              | 2/6 [00:00&lt;?, ?it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading artifacts:  50%|██████████████████████████████                              | 3/6 [00:00&lt;00:00, 191.95it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading artifacts:  67%|████████████████████████████████████████                    | 4/6 [00:00&lt;00:00, 255.93it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading artifacts:  83%|██████████████████████████████████████████████████          | 5/6 [00:00&lt;00:00, 319.91it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading artifacts: 100%|█████████████████████████████████████████████████████████████| 6/6 [00:04&lt;00:00,  1.28it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading artifacts: 100%|█████████████████████████████████████████████████████████████| 6/6 [00:04&lt;00:00,  1.28it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading artifacts: 100%|█████████████████████████████████████████████████████████████| 6/6 [00:04&lt;00:00,  1.28it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>Anwenden des Modells auf ein DIC Bild eines Aluminiumteils</strong></p>
 <p><em>Experiment S_160_4.7 Teil 22 linke Seite</em></p>
@@ -455,9 +491,9 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data will be imported for left side of the specimen...
 
 - S_160_4.7_AllDataPoints_22.txt. 1/1 imported.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data will be interpolated on an array...
+
+
+Data will be interpolated on an array...
 
 - S_160_4.7_AllDataPoints_22.txt_left. 1/1 interpolated.
 </pre></div>
@@ -485,7 +521,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data will be plotted...
 </pre></div>
 </div>
-<img alt="_images/c25280c4e8215607ce129afcd5a531c65979276f1194f0b808c4f2488805f3d8.png" src="_images/c25280c4e8215607ce129afcd5a531c65979276f1194f0b808c4f2488805f3d8.png" />
+<img alt="_images/a25beeb1715b276a2b16bf8f17c9b3bb6776d50efc9dd90cd9f5341ebfd06a93.png" src="_images/a25beeb1715b276a2b16bf8f17c9b3bb6776d50efc9dd90cd9f5341ebfd06a93.png" />
 </div>
 </div>
 </section>

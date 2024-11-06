@@ -1,4 +1,4 @@
-# Methoden und Werkzeuge zum Management des gesamten Lifecycles von industriellen KI-Anwendungen
+# Methoden und Werkzeuge zum Management des Lifecycles von KI-Anwendungen und deren Qualitätssicherung
 
 Dieser Kurs gibt eine Übersicht über MLOps Praktiken und Tools um Prozesse im gesamten ML-Lebenszyklus zu automatisieren, zu vereinfachen und zu standardisieren.
 
